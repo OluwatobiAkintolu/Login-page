@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#background{
+  background-image: url("/fiveKimages/bg.jpeg");
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* ####TRANSPARENT BACKGROUND SECTION STARTS HERE */
+.bg1{
+    position: absolute;
+    width: 50em;
+    height: 50vh;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.357);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bg1 h1{
+    text-transform: capitalize;
+    color: white;
+    line-height: 40px;
+}
+
+.bg1 p{
+    text-transform: capitalize;
+    color: white;
+    line-height: 30px;
+   
+}
+
+.bg1 a{
+    background-color: rgb(77, 3, 146);
+    padding: 5px 10px 5px;
+    top: 20%;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 15px;
+}
+
+/* ####TRANSPARENT BACKGROUND SECTION ENDS HERE */
+
+/* ####FORM SECTION STARTS HERE */
+
+.bg2{
+    position: absolute;
+    width: 25em;
+    height: 50vh;
+    padding: 30px;
+    background-color: rgba(239, 231, 231, 0.918);
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+ .bg2:hover { 
+    height: 60vh;
+ } 
+ 
+ .bg2 h1{
+    position: absolute;
+    text-transform: capitalize;
+    color: black;
+    top: 2px;
+    left: 20%;
+ }
+
+
+.form {
+    position: relative;
+    top: 20%;
+    width: 100%;
+    line-height: 50px;
+    
+}
+
+.user{
+    position: absolute;
+    border: 1px black;
+    border-radius: 10px;
+    width: 100%;
+    top: 5%;
+    height: 5vh;
+    box-shadow: rgba(118, 118, 165, 0.083) 0px 30px 60px -12px inset, rgba(53, 52, 52, 0.098) 0px 18px 36px -18px inset;
+}
+
+.pass{
+    position: absolute;
+    border: 1px black;
+    border-radius: 10px;
+    width: 100%;
+    top: 35%;
+    height: 5vh;
+    box-shadow: rgba(118, 118, 165, 0.083) 0px 30px 60px -12px inset, rgba(53, 52, 52, 0.098) 0px 18px 36px -18px inset;
+}
+
+/* ####FORM SECTION SUBMIT BUTTON STARTS HERE */
+
+.button-85 {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: blueviolet;
+    cursor:wait;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-85:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      blueviolet,
+      rgb(49, 2, 93),
+      rgb(199, 160, 235),
+      rgb(127, 5, 240),
+      rgb(79, 52, 105),
+      rgb(120, 92, 146),
+      #7a00ff,
+      blueviolet,
+      rgb(245, 244, 246)
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .button-85:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(77, 3, 146);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+  /* ####FORM SECTION SUBMIT BUTTON ENDS HERE */
+
+
+/* ####FORM SECTION FORGOT PASSWORD######*/
+  #bg2a{
+    color: rgb(0, 162, 255);
+    background-color: transparent;
+  }
+
+  /* ####FORM SECTION ENDS HERE */
